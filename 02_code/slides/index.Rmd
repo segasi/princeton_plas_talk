@@ -1,0 +1,542 @@
+---
+title: "Mexico after the first year of<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>the COVID-19 pandemic"
+subtitle: "Princeton - PLAS | March 2nd, 2021"
+author: "Sebastián Garrido de Sierra<br>sebastian.garrido@cide.edu<br>@segasi"
+output:
+  xaringan::moon_reader:
+    css: [default, metropolis-fonts, "segasi.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: true
+---
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(pacman)
+p_load(cowplot, emo, ggthemes, ggrepel, ggridges, icons, janitor, kableExtra, knitr, lubridate, pander, purrr, readxl, Rlab, scales, tidyverse, wesanderson)
+theme_set(theme_grey()) # Tengo que redefinir el tema porque cowplot 
+                        # lo cambia
+
+opts_chunk$set(dpi = 300, fig.height = 4.5, warning = F)
+```
+
+
+
+
+
+# Outline
+
+--
+
+- Pandemic's impact on .hl_bold[three] dimensions
+
+--
+
+  - .hl_bold[Public health]
+  - .hl_bold[Economy] 
+  - .hl_bold[Social] 
+
+--
+
+- Potential explanations
+
+--
+
+  - .hl_bold[Structural] factors
+  - .hl_bold[Public] policies
+  
+    
+
+
+---
+class: inverse center middle
+# What has been the pandemic's impact so far?
+
+---
+class: center 
+<br><br><br><br> 
+
+# .hl_bold[Public health] dimension
+
+
+---
+class: center 
+<br><br><br><br> 
+
+# .hl_bold[Public health] dimension
+
+## .hl_bold_g[Deaths]
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/deaths/01_a_mexico_daily_deaths.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/deaths/01_b_mexico_daily_deaths.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/deaths/01_c_mexico_daily_deaths.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/deaths/02_a_mexico_daily_deaths_highlight_dec_to_feb.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/deaths/02_b_mexico_daily_deaths_highlight_dec_to_feb.png")
+```
+
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/deaths/02_c_mexico_daily_deaths_highlight_dec_to_feb.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "75%", echo = F}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/deaths/03_a_top_15_deaths_per_million.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "75%", out.height = "100%", echo = F}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/deaths/03_b_top_15_deaths_per_million_with_legend.png")
+```
+
+---
+class: center middle
+
+# .hl_bold[Public health] dimension
+
+## .hl_bold_g[Excess deaths]
+
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/excess_mortality/01_a_mexico_covid_deaths_excess_mortality.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/excess_mortality/01_b_mexico_covid_deaths_excess_mortality.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "75%", out.height = "100%", echo = F, dpi = 200}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/excess_mortality/02_top_15_excess_mortality_per_100k.png")
+```
+
+---
+class: center middle
+# .hl_bold[Economic] dimension
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/economy/1_a_gdp_change_2020.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/economy/1_b_gdp_change_2020.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/economy/1_c_gdp_change_2020.png")
+```
+
+---
+class: center middle
+# .hl_bold[Social] dimension
+
+## .hl_bold_g[Domestic violence]
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/domestic_gender_violence/01_investigtions_domestic_violence.png")
+```
+
+---
+class: center middle
+# .hl_bold[Social] dimension
+
+## .hl_bold_g[Gender violence]
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/domestic_gender_violence/02_investigations_gender_violence_different_than_domestic_violence.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/domestic_gender_violence/03_emergency_calls_violence_against_woman.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/domestic_gender_violence/04_emergency_calls_sexual_harrasment.png")
+```
+
+
+---
+class: center middle
+# .hl_bold[Social] dimension
+
+## .hl_bold_g[Education]
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/education/1_a_status_educational_institution.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/impact/education/1_b_status_educational_institution.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/others/parker_1.png")
+```
+
+.footnote[Source: [Boruchowicz, Parker & Robbins](https://focoeconomico.org/2020/09/21/uso-del-tiempo-de-los-adolescentes-durante-la-pandemia-en-mexico-una-mirada-inicial/)]
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/others/parker_2.png")
+```
+
+.footnote[Source: [Boruchowicz, Parker & Robbins](https://focoeconomico.org/2020/09/21/uso-del-tiempo-de-los-adolescentes-durante-la-pandemia-en-mexico-una-mirada-inicial/)]
+
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/others/parker_3.png")
+```
+
+.footnote[Source: [Boruchowicz, Parker & Robbins](https://focoeconomico.org/2020/09/21/uso-del-tiempo-de-los-adolescentes-durante-la-pandemia-en-mexico-una-mirada-inicial/)]
+
+
+
+---
+class: inverse center
+
+<br><br><br><br> 
+# How can we explain this situation?
+
+--
+
+## Potential .hl_bold[hypothesis]
+
+---
+class: center middle
+# .hl_bold[Structural] factors
+
+---
+# .hl_bold[Structural] factors
+
+- .hl_bold[49%] of Mexico's population lives under the poverty line
+--
+; .hl_bold[15%] lives in conditions of extreme poverty.
+
+--
+
+- Around .hl_bold[50%] of the labor force works in the informal sector.
+
+--
+
+- The current administration inherited a .hl_bold[fragmented] and .hl_bold[deficient] public health system
+
+
+---
+# .hl_bold[Structural] factors
+
+- Out of all OECD countries, Mexico ranks:
+
+  - .hl_bold[Lowest] in child mortality (4x OECD avg.)
+--
+
+  - .hl_bold[Lowest] in basic health care coverage
+--
+
+  - .hl_bold[2nd lowest] in life expectancy at birth 
+--
+
+  - .hl_bold[2nd lowest] in mortality from treatable causes
+--
+
+  - .hl_bold[4th lowest] in mortality from preventable causes
+
+  
+.footnote[Source: [INSP](https://www.insp.mx/avisos/recomendaciones-pandemia). All ODCE figures mentioned in the INSP report are from 2018.]
+
+
+---
+# .hl_bold[Structural] factors
+
+- In .hl_bold[2017] 
+
+  - Mexico had .hl_bold[1.7] beds per 1,000 people
+--
+
+  - Latin America's average was .hl_bold[2.1]
+
+--
+
+- Budget for epidemiological surveillance .hl_bold[decreased] from .hl_bold[$1,354M pesos] in 2009 to .hl_bold[$533M pesos] in 2020
+
+
+
+.footnote[Source: [INSP](https://www.insp.mx/avisos/recomendaciones-pandemia). All ODCE figures mentioned in the INSP report are from 2018.]
+
+---
+class: center 
+
+<br><br><br><br> 
+# .hl_bold[Policy] factors
+
+--
+## .hl_bold_g[Tests]
+
+---
+class: center middle
+
+```{r , out.width = "75%", out.height = "100%", echo = F, dpi = 200}
+# https://segasi.com.mx/covid19/princeton_plas_talk/
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/potential_causes/tests/01_bottom_20_countries_tests_per_thounsand.png")
+```
+
+
+---
+class: center middle
+
+```{r , out.width = "75%", out.height = "100%", echo = F, dpi = 200}
+# https://segasi.com.mx/covid19/princeton_plas_talk/
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/potential_causes/tests/02_tests_per_thounsand_america.png")
+```
+
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+# https://segasi.com.mx/covid19/princeton_plas_talk/
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/potential_causes/tests/03_a_daily_tests_per_thounsand.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+# https://segasi.com.mx/covid19/princeton_plas_talk/
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/potential_causes/tests/03_b_daily_tests_per_thounsand_mex_highlight.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "75%", out.height = "100%", echo = F, dpi = 200}
+# https://segasi.com.mx/covid19/princeton_plas_talk/
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/potential_causes/pos_rate/01_top_15_countries_positive_rate.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+# https://segasi.com.mx/covid19/princeton_plas_talk/
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/potential_causes/pos_rate/02_a_positive_rate_historical.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+# https://segasi.com.mx/covid19/princeton_plas_talk/
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/potential_causes/pos_rate/02_b_positive_rate_historical_mex_highlighted.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+# https://segasi.com.mx/covid19/princeton_plas_talk/
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/potential_causes/pos_rate/02_c_positive_rate_historical_mex_highlighted.png")
+```
+
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+# https://segasi.com.mx/covid19/princeton_plas_talk/
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/potential_causes/pos_rate/02_d_positive_rate_historical_mex_highlighted_who_range.png")
+```
+
+---
+
+.pull-left[
+```{r out.width = "60%", echo = F}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/others/ryan.jpg")
+```
+
+#### .hl_bold_g[Michael Ryan] 
+#### WHO  Executive Director of the Health Emergencies Programme
+
+]
+
+--
+
+.pull-right[
+
+"... specifically on Mexico itself, most certainly the scale of the pandemic and the epidemic in Mexico is under-represented. The testing in Mexico has continued to be limited..."
+
+]
+
+.footnote[Source: WHO's [press conference transcript](https://www.who.int/docs/default-source/coronaviruse/transcripts/covid-19-virtual-press-conference---21-august.pdf?sfvrsn=ada7ae85_0), pp. 11-12, August 8, 2020.]
+
+---
+
+.pull-left[
+```{r, out.width = "60%", echo = F}
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/others/ryan.jpg")
+```
+
+#### .hl_bold_g[Michael Ryan]
+#### WHO  Executive Director of the Health Emergencies Programme
+
+]
+
+.pull-right[
+
+"... Test positivity has remained very high, up near 50% at times and that means many, many, many people have either been underdiagnosed or diagnosed late."
+
+.hl_bold[]
+]
+
+.footnote[Source: WHO's [press conference transcript](https://www.who.int/docs/default-source/coronaviruse/transcripts/covid-19-virtual-press-conference---21-august.pdf?sfvrsn=ada7ae85_0), pp. 11-12, August 8, 2020.]
+
+
+
+---
+class: center middle
+# .hl_bold[Policy] factors
+
+## .hl_bold_g[Fiscal measures]
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+# https://segasi.com.mx/covid19/princeton_plas_talk/
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/potential_causes/fiscal_measures/01_a_fiscal_measures.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+# https://segasi.com.mx/covid19/princeton_plas_talk/
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/potential_causes/fiscal_measures/01_b_fiscal_measures.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+# https://segasi.com.mx/covid19/princeton_plas_talk/
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/potential_causes/fiscal_measures/01_c_fiscal_measures.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+# https://segasi.com.mx/covid19/princeton_plas_talk/
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/potential_causes/fiscal_measures/01_d_fiscal_measures.png")
+```
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+# https://segasi.com.mx/covid19/princeton_plas_talk/
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/potential_causes/fiscal_measures/01_e_fiscal_measures.png")
+```
+
+---
+class: center middle
+# .hl_bold[Policy] factors
+
+## .hl_bold_g[The problem seems to extend to other dimensions]
+
+
+
+---
+class: center middle
+
+```{r , out.width = "100%", out.height = "100%", echo = F, dpi = 200}
+# https://segasi.com.mx/covid19/princeton_plas_talk/
+knitr::include_graphics("https://segasi.com.mx/covid19/princeton_plas_talk/potential_causes/general_measures/01_mesures_vs_pandemic.png")
+```
+
+
+---
+class: center middle
+# Thank you
+
+`r icon_style(fontawesome("github"), scale = 1, fill = "steelblue")` `repo`: [https://bit.ly/3kEFVOx](https://github.com/segasi/princeton_plas_talk)
